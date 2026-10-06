@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KnockJock</title>
+<meta name="description" content="KnockJock — a company in the making, focused on AI, technology, and code.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='6' fill='%230078D4'/%3E%3Ctext x='20' y='27' font-family='Arial' font-weight='700' font-size='17' fill='white' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== TOP BAR ===================== -->
+<header class="topbar" id="topbar">
+  <a href="#" class="brand" id="logoHome">KnockJock</a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#" class="nav-link" data-view="home">Home</a>
+    <a href="#" class="nav-link" data-view="about">About</a>
+  </nav>
+
+  <div class="topbar-actions">
+    <button class="icon-btn" id="searchToggle" aria-label="Search">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none"><line x1="4" y1="7" x2="20" y2="7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="4" y1="17" x2="20" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <input type="text" placeholder="Search KnockJock.com" id="searchInput">
+    <button class="icon-btn" id="searchClose" aria-label="Close search">
+      <svg viewBox="0 0 24 24" fill="none"><line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#" class="mobile-link" data-view="home">Home</a>
+  <a href="#" class="mobile-link" data-view="about">About</a>
+</nav>
+
+<main id="mainContent">
+
+  <!-- ===================== HOME VIEW ===================== -->
+  <section class="view active" id="view-home">
+
+    <section class="hero">
+      <div class="hero-shape" aria-hidden="true"></div>
+      <div class="hero-inner reveal">
+        <p class="eyebrow">AI · Technology · Code</p>
+        <h1>Building what's next in AI and technology.</h1>
+        <p class="hero-sub">KnockJock is a company in the making — focused on artificial intelligence, technology, and software development. More details coming soon.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" data-view="about">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-strip reveal">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span class="status-text">Status: In development — launch date to be announced</span>
+    </section>
+
+    <section class="focus-section">
+      <h2 class="reveal">Where we're headed</h2>
+      <p class="section-sub reveal">Three areas shaping the early direction of KnockJock.</p>
+
+      <div class="focus-grid">
+        <article class="focus-card reveal">
+          <div class="focus-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Artificial Intelligence</h3>
+          <p>Exploring how AI can be applied thoughtfully, with a long-term view rather than a rush to ship.</p>
+        </article>
+
+        <article class="focus-card reveal">
+          <div class="focus-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Technology</h3>
+          <p>Keeping an eye on where technology is heading, and where KnockJock might eventually fit in.</p>
+        </article>
+
+        <article class="focus-card reveal">
+          <div class="focus-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13 5l-2 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Code</h3>
+          <p>A foundation built by people who write software — practical, deliberate, and built to last.</p>
+        </article>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ===================== ABOUT VIEW ===================== -->
+  <section class="view" id="view-about">
+    <div class="about-wrap">
+      <p class="eyebrow">About</p>
+      <h1 class="about-title">About KnockJock</h1>
+      <p class="about-body">
+        This website is currently a work in progress. It belongs to a company named <strong>KnockJock</strong>, which plans to focus on AI, technology, and coding in the future. The company does not yet have any specific plans in place, but it does intend to build something meaningful in this space going forward.
+      </p>
+      <p class="about-body">
+        For this reason, please do not attempt to tamper with, copy, or interfere with this name in any way. The name <strong>KnockJock</strong> is currently reserved. Thank you for your understanding.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <p class="footer-brand">KnockJock</p>
+  <p class="footer-line">© <span id="year"></span> KnockJock. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
